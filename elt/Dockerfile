@@ -1,7 +1,7 @@
-FROM python:3.8-slim
+FROM python:3.8-slim-buster
 
 RUN apt-get update && apt-get install -y postgresql-client
 
-COPY elt-script.py .
+COPY elt_script.py .
 
-CMD ["pyhton", "elt_script.py"]
+CMD ["python", "elt_script.py"]
