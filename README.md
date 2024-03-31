@@ -31,7 +31,7 @@ In this branch, a CRON job has been implemented to automate the ELT process. The
 
 To configure the CRON job:
 
-1. Currently, the CRON job is setup to run every day at 3am.
+1. Currently, the CRON job is setup to run every day at 5am.
 2. You can adjust the time as needed within the Dockerfile found in the `elt_script` folder.
 
 ## Getting Started
