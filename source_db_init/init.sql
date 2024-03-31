@@ -120,3 +120,26 @@ INSERT INTO User_Subscription (User_Id, Sub_Id) VALUES
 (13,13),
 (14,14),
 (15,15);
+
+CREATE TABLE User_Pref(
+    User_Id INT REFERENCES User_Account(User_Id),
+    Pref_Id INT REFERENCES Preferences(Pref_Id),
+    PRIMARY KEY (User_Id, Pref_Id)
+);
+
+INSERT INTO User_Pref (User_Id, Pref_Id) VALUES
+(1,1),
+(2,2),
+(3,3),
+(4,4),
+(5,5),
+(6,6),
+(7,7),
+(8,8),
+(9,9),
+(10,10),
+(11,11),
+(12,12),
+(13,13),
+(14,14),
+(15,15);
